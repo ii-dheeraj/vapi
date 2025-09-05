@@ -1,0 +1,3 @@
+livekit-agents[google]==1.2.*
+livekit-plugins-tavus==1.2.*
+python-dotenv>=1.0.0
