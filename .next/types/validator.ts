@@ -53,6 +53,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/interview/[room]">
 }
 
+// Validate ../app/interview/demo/page.tsx
+{
+  const handler = {} as typeof import("../app/interview/demo/page.js")
+  handler satisfies AppPageConfig<"/interview/demo">
+}
+
 // Validate ../app/page.tsx
 {
   const handler = {} as typeof import("../app/page.js")
@@ -63,6 +69,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("../app/api/livekit-token/route.js")
   handler satisfies RouteHandlerConfig<"/api/livekit-token">
+}
+
+// Validate ../app/api/tavus/route.ts
+{
+  const handler = {} as typeof import("../app/api/tavus/route.js")
+  handler satisfies RouteHandlerConfig<"/api/tavus">
 }
 
 

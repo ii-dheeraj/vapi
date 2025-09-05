@@ -1,5 +1,7 @@
 {
   "/api/livekit-token/route": "app/api/livekit-token/route.js",
+  "/api/tavus/route": "app/api/tavus/route.js",
+  "/interview/[room]/page": "app/interview/[room]/page.js",
   "/page": "app/page.js",
-  "/interview/[room]/page": "app/interview/[room]/page.js"
+  "/interview/demo/page": "app/interview/demo/page.js"
 }
