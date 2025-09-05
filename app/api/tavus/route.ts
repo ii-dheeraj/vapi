@@ -4,7 +4,7 @@ export async function POST(req: NextRequest) {
   try {
     const { action, conversationId } = await req.json();
     const apiKey = process.env.TAVUS_API_KEY;
-    const personaId = process.env.TAVUS_PERSONA_ID || "pd43ffef";
+    const personaId = "p0f105b5b82e";
 
     console.log("API Key exists:", !!apiKey);
     console.log("Persona ID:", personaId);
